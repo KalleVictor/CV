@@ -56,10 +56,10 @@ hr.blue-line{
     align-items: flex-start;
     width: 100%;
     max-width: 1024px;
-    margin: 0%;
+    margin: 0% auto;
     padding: 20px;
     box-sizing: border-box;
-
+    align-self: center;
     background-color: white;
     border-radius: 30px;
     overflow: hidden;
@@ -73,6 +73,7 @@ hr.blue-line{
     min-width: 280px;
     max-width: 370px;
     margin: 1%;
+    border-top-left-radius: 30px;
     background-color: lightblue;
     padding: 20px;
     box-sizing: border-box;
@@ -82,8 +83,11 @@ hr.blue-line{
 
 /* Right Column */
 .flex-container .right {
-    flex: 1 1 68%;
-    padding-right: 20px;
+    flex: 1 1 66%;
+    padding: 20px;
+    margin: 1%;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
     box-sizing: border-box;
     background: linear-gradient(95deg, lightblue, midnightblue);
     color-scheme: dark;
@@ -208,7 +212,7 @@ hr.blue-line{
 .icon-btn {
     background-color: #f0f0f0;
     border-radius: 50%;
-    padding: 12px;
+    padding: 14px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     display: inline-flex;
