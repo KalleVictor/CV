@@ -78,7 +78,7 @@ hr.blue-line{
 /* Right Column */
 .flex-container .right {
     flex: 1 1 62%;
-    min-width: 360px;
+    min-width: 300px;
     max-width: 660px;
     padding: 20px;
     display: flex;
