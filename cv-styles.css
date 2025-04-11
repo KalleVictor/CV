@@ -1,11 +1,10 @@
 /* Mobile First (Default Styles) */
 body {
-    font-family: Calibri;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    padding: 2rem;
+    padding: 1%;
     font-size: 16px; /* Base font size for mobile */
     line-height: 1.5; /* Base line height for mobile */
-    background-color: white;
     color: #333; /* Base text color for mobile */
     color-scheme: dark;
     box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -39,41 +38,31 @@ body {
 /* Header Styles */
 
 hr{
-    border: none;
-    border-top: 2px solid white;
-    margin: 20px 0; /* optional spacing */
+    border: 1px solid white;
 }
 
 hr.blue-line{
-    border-top: 2px solid lightblue;
+    border: 1px solid lightblue;
 }
 
 .flex-container {
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
     max-width: 1024px;
     margin: 0% auto;
-    padding: 1%;
-    box-sizing: border-box;
-    align-self: center;
-    background-color: white;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
 }
 
 /* Left Column */
 .flex-container .left {
     flex: 1 1 30%;
-    min-width: 280px;
+    min-width: 270px;
     max-width: 370px;
     margin: 1%;
-    border-top-left-radius: 30px;
+    border-radius: 30px;
     background-color: lightblue;
     padding: 1%;
     box-sizing: border-box;
@@ -83,16 +72,13 @@ hr.blue-line{
 
 /* Right Column */
 .flex-container .right {
+    box-sizing: border-box;
     flex: 1 1 66%;
     padding: 1%;
     margin: 1%;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    box-sizing: border-box;
+    border-radius: 30px;
     background: linear-gradient(95deg, lightblue, midnightblue);
     color-scheme: dark;
-
 }
 
 .flex-container .left:hover,
@@ -100,10 +86,20 @@ hr.blue-line{
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
 }
+.left h{
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -15px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
 
 .left p {
-    font-size: 12px;
-    line-height: 1.6;
     padding: 10px;
     border-left: 4px solid white;
     border-radius: 6px;
@@ -119,73 +115,79 @@ hr.blue-line{
     color: #333;
     transition: box-shadow 0.3s ease;
 }
+
 .left h1{
-
     color: white;
-    margin: -15px 0 -15px; 
-
     font-size: 20px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    margin-left: 5px;
     font-weight: bold;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 .left h2{
-    color: midnightblue;
-    margin-bottom: -10px;
-    font-size: 15px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(252, 252, 252, 1);
-}
-
-
-
-
-.rightheader{
-    background-color: lightblue;
-    background: linear-gradient(95deg, lightblue, midnightblue);
-    padding: 1%;
-    text-align: left;
-    border-top-right-radius: 20px;
-    margin-bottom: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    color-scheme: dark;
     box-sizing: border-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    overflow: hidden;
+    color: white;
+    font-size: 18px;
+    margin-bottom: -18px;
+    margin-top: -5px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.rightheader h{
-    color: white;
-    padding: 20px; 
-    margin: 0;
-    font-size: 25px;
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-}
 .rightcontent{
-    color:  rgb(79, 64, 167);
     font-size: 13px;
-    font-weight: bold;
+    margin: 0% centre;
+    box-sizing: border-box;
+
 }
 .rightcontent h2{
-    padding-left: 20px;
-}
-.rightcontainer{
-    border: 2px;
-    width: 100%;
-    height: auto;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: white;
-    padding: 1%;
-    margin: 1%;
-    color-scheme: dark;
-    box-sizing: border-box;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+    margin-bottom: -10px;
+    color:  white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.cv-section {
+    padding: 10px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section p {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    background-color: #ffffff;
+    border-left: 4px solid lightblue;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;    
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cv-section h2 {
+    background: linear-gradient(95deg, lightblue, midnightblue);
+    color: white;
+    padding: 10px 20px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.cv-section h3 {
+    font-weight: normal;
+    color: rgb(79, 64, 167);
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cv-section p:hover {
+    background-color: lightblue;
+    color: white;
+}
 /* Profile Picture */
 .profile-pic {
     width: 60%;
@@ -197,26 +199,27 @@ hr.blue-line{
     margin: 1% auto; /* Center the image */
     display: block;
 }
-
-.flex-container .icon-buttons {
-    display: flex;
-    flex-wrap: wrap; /* This allows items to wrap */
-    align-items: center;
-    padding-top: 0px;
-    gap: 10px;
-    justify-content: center;
-    margin: 5px 0;
-}
-.footer p{
+.footer p2{
     font-size: 12px;
     color: white;
     padding: 10px;
 }
 
+.icon-buttons {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* This allows items to wrap */
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    justify-content: center;
+    margin: 5px 0;
+}
+
 .icon-btn {
     background-color: #f0f0f0;
     border-radius: 50%;
-    padding: 14px;
+    padding: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     display: inline-flex;
@@ -259,54 +262,7 @@ hr.blue-line{
     height: 30px;
     display: block;
 }
-.cv-section {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 12px;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
-.cv-section h2 {
-    background: linear-gradient(95deg, lightblue, midnightblue);
-    color: white;
-    padding: 10px 20px;
-    /* border-radius: 8px; */
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
-    font-size: 15px;
-    margin: 0 0 10px 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-.rightcontent h2{
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.cv-section h3 {
-    font-weight: normal;
-    color: rgb(79, 64, 167);
-    margin: 0 0 10px 0;
-    font-size: 12px;
-    letter-spacing: 1px;
-}
-
-.cv-section p {
-    font-size: 12px;
-    line-height: 1.6;
-    color: #333;
-    padding: 10px;
-    background-color: #ffffff;
-    border-left: 4px solid lightblue;
-    /* border-radius: 6px; */
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;    
-    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.05);
-}
-
-.cv-section p:hover {
-    background-color: lightblue;
-    color: white;
-}
 
 /* Tooltip container using ::after */
 .icon-btn::after,
