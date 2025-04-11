@@ -57,7 +57,7 @@ hr.blue-line{
     width: 100%;
     max-width: 1024px;
     margin: 0% auto;
-    padding: 20px;
+    padding: 1%;
     box-sizing: border-box;
     align-self: center;
     background-color: white;
@@ -75,7 +75,7 @@ hr.blue-line{
     margin: 1%;
     border-top-left-radius: 30px;
     background-color: lightblue;
-    padding: 20px;
+    padding: 1%;
     box-sizing: border-box;
     color-scheme: dark;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -84,14 +84,15 @@ hr.blue-line{
 /* Right Column */
 .flex-container .right {
     flex: 1 1 66%;
-    padding: 20px;
+    padding: 1%;
     margin: 1%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     box-sizing: border-box;
     background: linear-gradient(95deg, lightblue, midnightblue);
     color-scheme: dark;
-    box-shadow: 0 8px rgba(0, 0, 0, 0.15);
+
 }
 
 .flex-container .left:hover,
@@ -141,10 +142,12 @@ hr.blue-line{
 .rightheader{
     background-color: lightblue;
     background: linear-gradient(95deg, lightblue, midnightblue);
-    padding: 1px;
+    padding: 1%;
     text-align: left;
     border-top-right-radius: 20px;
     margin-bottom: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
     color-scheme: dark;
     box-sizing: border-box;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -164,8 +167,9 @@ hr.blue-line{
     color:  rgb(79, 64, 167);
     font-size: 13px;
     font-weight: bold;
-    
-
+}
+.rightcontent h2{
+    padding-left: 20px;
 }
 .rightcontainer{
     border: 2px;
@@ -174,7 +178,7 @@ hr.blue-line{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     background-color: white;
-    padding: 20px;
+    padding: 1%;
     margin: 1%;
     color-scheme: dark;
     box-sizing: border-box;
@@ -256,8 +260,8 @@ hr.blue-line{
     display: block;
 }
 .cv-section {
-    margin-bottom: 30px;
-    padding: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 12px;
     background: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
