@@ -64,8 +64,8 @@ hr.blue-line{
 /* Left Column */
 .flex-container .left {
     flex: 1 1 30%;
-    min-width: 360px;
-    max-width: 370px;
+    min-width: 300px;
+    max-width: 340px;
     margin-right: 1%;
     background-color: lightblue;
     padding: 10px;
@@ -80,7 +80,6 @@ hr.blue-line{
     flex: 1 1 62%;
     min-width: 360px;
     max-width: 660px;
-    margin-left: 1%;
     padding: 20px;
     display: flex;
     flex-direction: column;
