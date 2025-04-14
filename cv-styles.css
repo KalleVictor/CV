@@ -59,8 +59,7 @@ hr.blue-line{
 /* Left Column */
 .flex-container .left {
     flex: 1 1 30%;
-    min-width: 270px;
-    max-width: 370px;
+    min-width: 270px; /* Prevent it from shrinking too small */
     margin: 1%;
     border-radius: 30px;
     background-color: lightblue;
