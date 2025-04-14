@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       content.classList.toggle('open', !isOpen);
       title.classList.toggle('active', !isOpen);
+      clickedItem.classList.toggle('open', !isOpen);
     });
   });
 });

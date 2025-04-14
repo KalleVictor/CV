@@ -337,6 +337,10 @@ hr.blue-line{
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
   }
 
+  .accordion-item.open {
+    background-color: white;
+  }
+
   .accordion-title {
     display: flex;
     align-items: center;
@@ -385,8 +389,3 @@ hr.blue-line{
     transform: rotate(90deg);
     color: lightblue;
   }
-  /* .accordion-item:hover .accordion-arrow,
-  .accordion-title.active:hover .accordion-arrow {
-    transform: rotate(90deg);
-    color: lightblue;
-  } */
