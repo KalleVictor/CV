@@ -368,16 +368,25 @@ hr.blue-line{
     color: lightblue;
   }
 
-  .arrow {
-    font-size: 1rem;
-    color: white;
+  .accordion-arrow {
+    display: inline-block;
+    margin-right: 10px;
     transition: transform 0.3s ease, color 0.3s ease;
+    color: white;
   }
   
-  .accordion-item:hover .arrow {
+  /* On hover over item, arrow changes to lightblue */
+  .accordion-item:hover .accordion-arrow {
     color: lightblue;
-    transform: rotate(90deg);
   }
-  .accordion-title.active .arrow {
+  
+  /* When active (list is open), rotate the arrow */
+  .accordion-title.active .accordion-arrow {
     transform: rotate(90deg);
+    color: white;
+  }
+  .accordion-item:hover .accordion-arrow,
+  .accordion-title.active:hover .accordion-arrow {
+    transform: rotate(90deg);
+    color: lightblue;
   }
