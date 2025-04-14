@@ -33,20 +33,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.accordion-item').forEach(item => {
     item.addEventListener('click', (e) => {
-      // Prevent double toggling when clicking links or interactive elements
-      if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') return;
+      // Make sure we always find the right parent .accordion-item
+      const clickedItem = e.target.closest('.accordion-item');
+      if (!clickedItem) return;
 
-      const title = item.querySelector('.accordion-title');
-      const content = item.querySelector('.accordion-content');
+      const content = clickedItem.querySelector('.accordion-content');
+      const title = clickedItem.querySelector('.accordion-title');
+
       const isOpen = content.classList.contains('open');
 
-      if (isOpen) {
-        content.classList.remove('open');
-        title.classList.remove('active');
-      } else {
-        content.classList.add('open');
-        title.classList.add('active');
-      }
+      // Toggle the open class
+      content.classList.toggle('open', !isOpen);
+      title.classList.toggle('active', !isOpen);
     });
   });
 });
