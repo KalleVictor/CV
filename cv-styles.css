@@ -383,10 +383,10 @@ hr.blue-line{
   /* When active (list is open), rotate the arrow */
   .accordion-title.active .accordion-arrow {
     transform: rotate(90deg);
-    color: white;
+    color: lightblue;
   }
-  .accordion-item:hover .accordion-arrow,
+  /* .accordion-item:hover .accordion-arrow,
   .accordion-title.active:hover .accordion-arrow {
     transform: rotate(90deg);
     color: lightblue;
-  }
+  } */
