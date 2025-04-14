@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karl-Johan Victor</title>
     <link rel="stylesheet" href="cv-styles.css">
+    <javascript src="cv-script.js"></script>
 </head>
     <body>
+        <javascript src="cv-script.js">
         <header>
         </header>
         <div class="flex-container">
             <div class="left">
+                <hr>
                 <div text align="center">
                 <img src="images/profilbild4.jpg" alt="Profile Picture" class="profile-pic">
                 </div>
@@ -71,28 +74,107 @@
                 <hr>
                 <h1>COMPETENCIES</h1>
                 <hr>
-                <h2>Game Design & Development</h2>
-                <p>Game Design • Game Directing • Multiplayer & Single Player Design • Game UI/UX • Story Design</p>
-                <h2>Game Engines & Scripting</h2>
-                <p>Unity (C#) • Unreal Engine (Blueprints/C++) • Godot • Lua</p>
-                <h2>Web & Frontend Development</h2>
-                <p>HTML • CSS • JavaScript • XML • Web & Page Layouts • WordPress</p>
-                <h2>Art & Media Tools</h2>
-                <p>Photoshop • Gimp • Blender • Wavelab • Hand & Digital Illustration</p>
-                <h2>Data & Backend</h2>
-                <p>SQL Databases • API Integration • XML• ASP</p>
-                <h2>Project & Productivity Tools</h2>
-                <p>Jira • Microsoft Office (Word, Excel, PowerPoint)</p>
+                <div class="accordion-menu">
+                    <div class="accordion-item">
+                      <div class="accordion-title"><span class="arrow">&#9654;</span>Game Design & Development                      
+                      </div> 
+
+                      <div class="accordion-content">
+                        <ul>
+                          <li>Game Design</li>
+                          <li>Game Directing</li>
+                          <li>Multiplayer & Single Player Design</li>
+                          <li>Game UI/UX</li>
+                          <li>Story Design</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-title"><span class="arrow">&#9654;</span>Game Engines & Scripting</div>
+                      <div class="accordion-content">
+                        <ul>
+                          <li>Unity (C#)</li>
+                          <li>Unreal Engine (Blueprints/C++)</li>
+                          <li>Godot</li>
+                          <li>Lua</li>
+                        </ul>
+
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-title"><span class="arrow">&#9654;</span>Web & Frontend Development</div>
+                      <div class="accordion-content">
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JavaScript</li>
+                          <li>Web & Page Layouts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-title"><span class="arrow">&#9654;</span>Art & Media Tools</div>
+                      <div class="accordion-content">
+                        <ul>
+                          <li>Photoshop</li>
+                          <li>Gimp</li>
+                          <li>Blender</li>
+                          <li>Wavelab</li>
+                          <li>Hand & Digital Illustration</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-title"><span class="arrow">&#9654;</span>Data & Backend</div>
+                      <div class="accordion-content">
+                        <ul>
+                          <li>SQL Databases</li>
+                          <li>API Integration</li>
+                          <li>XML</li>
+                          <li>ASP</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <div class="accordion-title"><span class="arrow">&#9654;</span>Project & Productivity Tools</div>
+                      <div class="accordion-content">
+                        <ul>
+                          <li>Jira</li>
+                          <li>Office 365 (Word, Excel, PowerPoint)</li>
+                          <li>GitHub</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 <hr>
                 <h1>INTERESTS</h1>
                 <hr>
-                <h2>Creative & Gaming</h2>
-                <p>Game Design & Narrative Writing • Songwriting & Guitar • Video Games</p>
-                <h2>Lifestyle & Projects</h2>
-                <p>Spending Time with Family & Friends • Nature • DIY & Home Projects • Travel & Exploration</p>
+                  <div class="accordion-item">
+                    <div class="accordion-title"><span class="arrow">&#9654;</span>Creative & Gaming</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Game Design & Narrative Writing</li>
+                            <li>Songwriting & Guitar</li>
+                            <li>Video Games</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <div class="accordion-title"><span class="arrow">&#9654;</span>Lifestyle & Projects</div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Spending Time with Family & Friends</li>
+                            <li>Nature</li>
+                            <li>DIY & Home Projects</li>
+                            <li>Travel & Exploration</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <hr>
             </div>
             <div class="right">        
                 <div class="rightcontent">
+                  <hr class="blue-line">
                     <h2>WORKING EXPERIENCE</h2>
                     <hr class="blue-line">  
 
@@ -137,6 +219,7 @@
                         <p>Served as Squad Leader (Rektroppchef) in the Artillery Regiment A7 in Visby, Gotland. Developed leadership, discipline, and operational planning skills while managing personnel and coordinating training routines under high-responsibility conditions.</p>
                     </div>
                 </div>
+                <hr class="blue-line">
                 <div class="icon-buttons">                           
                     <a href="mailto:karljohan.victor@hotmail.com"
                     class="icon-btn" 
@@ -175,7 +258,9 @@
                 <div class="footer" style="text-align: center;"> 
                     <p2>&copy; 2025 Karl-Johan Victor. All rights reserved.</p2>
                 </div>
+                <hr class="blue-line">
             </div>           
         </div>
+        <script src="cv-script.js"></script>
     </body>
 </html>

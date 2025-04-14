@@ -308,3 +308,76 @@ hr.blue-line{
 .icon-btn2:hover::before {
     opacity: 1;
 }
+
+.accordion-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .accordion-item {
+    background-color: lightblue;
+    color: #333;
+    border-left: 4px solid white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+  }
+
+  .accordion-item:hover {
+    background-color: white;
+    font-weight: normal;
+    color: #333;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .accordion-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 
+      max-height 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+  
+  .accordion-content.open {
+    max-height: 500px; /* or a big enough value */
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 8px;
+  }
+
+  .accordion-item:hover .arrow {
+    color: lightblue;
+  }
+
+  .arrow {
+    font-size: 1rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .accordion-item:hover .arrow {
+    color: lightblue;
+    transform: rotate(90deg);
+  }
+  .accordion-title.active .arrow {
+    transform: rotate(90deg);
+  }
